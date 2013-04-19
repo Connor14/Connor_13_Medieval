@@ -20,6 +20,8 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 //To do
 	//register textures
 	//register entities
+//Matts Ideas
+	//Castle Brick
 public class CastlesMod 
 {
 	
