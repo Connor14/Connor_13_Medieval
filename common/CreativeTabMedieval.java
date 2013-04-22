@@ -3,9 +3,9 @@ package Connor_13_Medieval.common;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 
-public class CreativeTabCastles extends CreativeTabs 
+public class CreativeTabMedieval extends CreativeTabs 
 {
-	public CreativeTabCastles(String label) 
+	public CreativeTabMedieval(String label) 
 	{
 	    super(label);
 	}
@@ -13,6 +13,6 @@ public class CreativeTabCastles extends CreativeTabs
 	@Override
 	public ItemStack getIconItemStack() 
 	{
-	    return new ItemStack(CastlesMod.ArrowmanSpawner);
+	    return new ItemStack(MedievalMod.ArrowmanSpawner);
 	}
 }

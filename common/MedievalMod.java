@@ -32,13 +32,13 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 		//Spices
 		//New Food
 		//Drinks
-public class CastlesMod 
+public class MedievalMod 
 {
 	
 	@SidedProxy(clientSide = "Connor_13_Medieval.client.ClientProxyConnor_13_Mods", serverSide = "Connor_13_Medieval.common.CommonProxyConnor_13_Mods")
-	public static CommonProxyConnor_13_Mods proxy;
+	public static CommonProxyConnor_13_Medieval proxy;
 	
-	public static CreativeTabs Castles = new CreativeTabCastles("Castles");
+	public static CreativeTabs Medieval = new CreativeTabMedieval("Medieval");
 
 	public static Item ArrowmanSpawner;
 
@@ -47,11 +47,11 @@ public class CastlesMod
 	{
 		proxy.registerRenderThings();
 		
-		EntityRegistry.registerModEntity(C13EntityArrowman.class, "Arrowman", 1, this, 80, 3, true);
-		LanguageRegistry.instance().addStringLocalization("entity.CastlesMod.Arrowman.name", "Arrowman");
-		LanguageRegistry.instance().addStringLocalization("itemGroup.Castles", "en_US", "Castles");
+		EntityRegistry.registerModEntity(MedievalEntityArrowman.class, "Arrowman", 1, this, 80, 3, true);
+		LanguageRegistry.instance().addStringLocalization("entity.MedievalMod.Arrowman.name", "Arrowman");
+		LanguageRegistry.instance().addStringLocalization("itemGroup.Medieval", "en_US", "Medieval");
 
-		ArrowmanSpawner = new C13ItemArrowmanSpawner(251);//add in the rest
+		ArrowmanSpawner = new MedievalItemArrowmanSpawner(251);//add in the rest
 
 		LanguageRegistry.addName(ArrowmanSpawner, "Arrowman Spawner");	
 		

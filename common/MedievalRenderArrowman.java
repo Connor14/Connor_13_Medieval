@@ -5,20 +5,20 @@ import net.minecraft.client.renderer.entity.RenderBiped;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
 
-public class C13RenderArrowman extends RenderBiped
+public class MedievalRenderArrowman extends RenderBiped
 {
     
-    public C13RenderArrowman(ModelBiped par1ModelBiped, float par2)
+    public MedievalRenderArrowman(ModelBiped par1ModelBiped, float par2)
     {
         super(par1ModelBiped, par2);
     }
 
-    public void renderArrowman(C13EntityArrowman par1EntityArrowGuardian, double par2, double par4, double par6, float par8, float par9)
+    public void renderArrowman(MedievalEntityArrowman par1EntityArrowGuardian, double par2, double par4, double par6, float par8, float par9)
     {
         super.doRenderLiving(par1EntityArrowGuardian, par2, par4, par6, par8, par9);
     }
 
-    protected void func_25006_b(C13EntityArrowman entityarrowguardian, float f)
+    protected void func_25006_b(MedievalEntityArrowman entityarrowguardian, float f)
     {
     }
 
@@ -28,12 +28,12 @@ public class C13RenderArrowman extends RenderBiped
      */
     protected void preRenderCallback(EntityLiving par1EntityLiving, float par2)
     {
-        func_25006_b((C13EntityArrowman)par1EntityLiving, par2);
+        func_25006_b((MedievalEntityArrowman)par1EntityLiving, par2);
     }
 
     public void doRenderLiving(EntityLiving par1EntityLiving, double par2, double par4, double par6, float par8, float par9)
     {
-    	renderArrowman((C13EntityArrowman)par1EntityLiving, par2, par4, par6, par8, par9);
+    	renderArrowman((MedievalEntityArrowman)par1EntityLiving, par2, par4, par6, par8, par9);
     }
 
     /**
@@ -44,7 +44,7 @@ public class C13RenderArrowman extends RenderBiped
      */
     public void doRender(Entity par1Entity, double par2, double par4, double par6, float par8, float par9)
     {
-        renderArrowman((C13EntityArrowman)par1Entity, par2, par4, par6, par8, par9);
+        renderArrowman((MedievalEntityArrowman)par1Entity, par2, par4, par6, par8, par9);
     }
 
 }

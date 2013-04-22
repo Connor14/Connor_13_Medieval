@@ -34,7 +34,7 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 
-public class C13EntityArrowman extends EntityTameable
+public class MedievalEntityArrowman extends EntityTameable
 {
     private float field_70926_e;
     private float field_70924_f;
@@ -49,7 +49,7 @@ public class C13EntityArrowman extends EntityTameable
     private float timeWolfIsShaking;
     private float prevTimeWolfIsShaking;
 
-    public C13EntityArrowman(World par1World)
+    public MedievalEntityArrowman(World par1World)
     {
         super(par1World);
         this.texture = "/C13/guardianarrow.png";
@@ -415,18 +415,18 @@ public class C13EntityArrowman extends EntityTameable
     /**
      * This function is used when two same-species animals in 'love mode' breed to generate the new baby animal.
      */
-    public C13EntityArrowman spawnBabyAnimal(EntityAgeable par1EntityAgeable)
+    public MedievalEntityArrowman spawnBabyAnimal(EntityAgeable par1EntityAgeable)
     {
-        C13EntityArrowman C13EntityArrowman = new C13EntityArrowman(this.worldObj);
+    	MedievalEntityArrowman MedievalEntityArrowman = new MedievalEntityArrowman(this.worldObj);
         String s = this.getOwnerName();
 
         if (s != null && s.trim().length() > 0)
         {
-        	C13EntityArrowman.setOwner(s);
-        	C13EntityArrowman.setTamed(true);
+        	MedievalEntityArrowman.setOwner(s);
+        	MedievalEntityArrowman.setTamed(true);
         }
 
-        return C13EntityArrowman;
+        return MedievalEntityArrowman;
     }
 
     public void func_70918_i(boolean par1)
@@ -456,14 +456,14 @@ public class C13EntityArrowman extends EntityTameable
         {
             return false;
         }
-        else if (!(par1EntityAnimal instanceof C13EntityArrowman))
+        else if (!(par1EntityAnimal instanceof MedievalEntityArrowman))
         {
             return false;
         }
         else
         {
-            C13EntityArrowman C13EntityArrowman = (C13EntityArrowman)par1EntityAnimal;
-            return !C13EntityArrowman.isTamed() ? false : (C13EntityArrowman.isSitting() ? false : this.isInLove() && C13EntityArrowman.isInLove());
+        	MedievalEntityArrowman MedievalEntityArrowman = (MedievalEntityArrowman)par1EntityAnimal;
+            return !MedievalEntityArrowman.isTamed() ? false : (MedievalEntityArrowman.isSitting() ? false : this.isInLove() && MedievalEntityArrowman.isInLove());
         }
     }
 

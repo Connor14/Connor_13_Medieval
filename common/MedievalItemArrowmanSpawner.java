@@ -12,13 +12,13 @@ import net.minecraft.util.Facing;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 
-public class C13ItemArrowmanSpawner extends Item
+public class MedievalItemArrowmanSpawner extends Item
 {        
-		public C13ItemArrowmanSpawner (int i)        
+		public MedievalItemArrowmanSpawner (int i)        
 		{                
 			super(i);                
 			maxStackSize = 4;
-			setCreativeTab(CastlesMod.Castles);
+			setCreativeTab(MedievalMod.Medieval);
 		}        
 	
 		/**         
@@ -33,9 +33,9 @@ public class C13ItemArrowmanSpawner extends Item
 	        
 			entityplayer.addChatMessage("Arrow Guardian Spawned");
 			
-			C13EntityArrowman C13EntityArrowman = new C13EntityArrowman(world);
-			C13EntityArrowman.setLocationAndAngles(par2, par4, par6, MathHelper.wrapAngleTo180_float(world.rand.nextFloat() * 360.0F), 0.0F);
-			world.joinEntityInSurroundings(C13EntityArrowman);
+			MedievalEntityArrowman MedievalEntityArrowman = new MedievalEntityArrowman(world);
+			MedievalEntityArrowman.setLocationAndAngles(par2, par4, par6, MathHelper.wrapAngleTo180_float(world.rand.nextFloat() * 360.0F), 0.0F);
+			world.joinEntityInSurroundings(MedievalEntityArrowman);
             
 			return itemstack;        
 		}
