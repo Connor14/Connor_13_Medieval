@@ -20,11 +20,18 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 //To do
 	//register textures
 	//register entities
-//Matts Ideas
+//Matt's Ideas
 	//Stain Glass (with disign)
 	//Throne
 	//Armour
-	//
+	//Bowls with Flames
+	//Shields
+//Seprate Mod
+	//Cooking Mod
+		//Peppers
+		//Spices
+		//New Food
+		//Drinks
 public class CastlesMod 
 {
 	
