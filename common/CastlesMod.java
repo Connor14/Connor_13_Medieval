@@ -35,7 +35,7 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 public class CastlesMod 
 {
 	
-	@SidedProxy(clientSide = "Connor_13_Mods.client.ClientProxyConnor_13_Mods", serverSide = "Connor_13_Mods.common.CommonProxyConnor_13_Mods")
+	@SidedProxy(clientSide = "Connor_13_Medieval.client.ClientProxyConnor_13_Mods", serverSide = "Connor_13_Medieval.common.CommonProxyConnor_13_Mods")
 	public static CommonProxyConnor_13_Mods proxy;
 	
 	public static CreativeTabs Castles = new CreativeTabCastles("Castles");
