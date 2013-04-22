@@ -21,7 +21,10 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 	//register textures
 	//register entities
 //Matts Ideas
-	//Castle Brick
+	//Stain Glass (with disign)
+	//Throne
+	//Armour
+	//
 public class CastlesMod 
 {
 	
